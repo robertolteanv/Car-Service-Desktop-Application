@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cardealer.MechanicLoggedIn">
+
+    <!-- Left Pane -->
+    <left>
+        <AnchorPane prefHeight="500.0" prefWidth="216.0" style="-fx-background-color: #FC8500;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="profileImageView" fitHeight="65.0" fitWidth="65.0">
+                    <image>
+                        <Image url="@download.png" />
+                    </image>
+                </ImageView>
+                <!--
+                <Button fx:id="addCarButton" layoutX="56.0" layoutY="181.0" mnemonicParsing="false" onAction="#addCarButtonOnAction"
+                        prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #FFFFFF;" text="Add Car">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                -->
+                <Button fx:id="updateStatusButton" layoutX="56.0" layoutY="232.0" mnemonicParsing="false" onAction="#updateStatusButtonOnAction" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #FFFFFF;" text="Update Status">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="logOutButton" layoutX="56.0" layoutY="432.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #FFFFFF;" text="Log out">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            <Button fx:id="addCarButton" layoutX="56.0" layoutY="273.0" mnemonicParsing="false" onAction="#addCarButtonOnAction" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #FFFFFF;" text="Add Car">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="deleteCarButton" layoutX="56.0" layoutY="316.0" mnemonicParsing="false" onAction="#deleteCarButtonOnAction" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #FFFFFF;" text="Delete Car">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="refreshButton" layoutX="56.0" layoutY="357.0" mnemonicParsing="false" onAction="#refreshButtonOnAction" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #FFFFFF;" text="Refresh">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            </children>
+        </AnchorPane>
+    </left>
+
+    <!-- Center Pane (TableView) -->
+    <center>
+        <TableView fx:id="carTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                    <TableColumn fx:id="makeTableColumn" prefWidth="120.66661071777344" text="Make" />
+                    <TableColumn fx:id="modelTableColumn" prefWidth="121.3333740234375" text="Model" />
+                    <TableColumn fx:id="vinTableColumn" prefWidth="169.33340454101562" text="VIN" />
+                    <TableColumn fx:id="problemTableColumn" prefWidth="149.99993896484375" text="Problem" />
+                    <TableColumn fx:id="statusTableColumn" prefWidth="120.666748046875" text="Status" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
