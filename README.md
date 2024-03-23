@@ -6,4 +6,4 @@ visit to the shop, as well as contact information of the service. Respectively, 
 can add a car by introducing the basic information of a car and after that he can change the
 status of the appointment or delete the car from the database. The application has been
 developed in JavaFX and the database controller PostgreSQL.
-# For more information check VericuDocumentaion.pdf
+# For more information check VericuDocumentation.pdf
